@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8" />
+    <title>Cadastro de Estudantes</title>
+  </head>
+  <body>
+    <h1 id="hTitle">Cadastro de Estudantes</h1>
+    <form id="frmStudent">
+      <input
+        id="iptName"
+        type="text"
+        value="Adair"
+        required
+        placeholder="Digite seu Nome"
+      />
+      <input
+        id="iptEmail"
+        type="email"
+        value="fdas@fddf.com"
+        placeholder="Digiete o Email"
+      />
+
+      <input
+        id="iptYearBirth"
+        type="number"
+        value="1990"
+        placeholder="Ano Nascimento"
+      />
+
+      <select id="selectCourse"></select>
+      <input type="submit" value="Gravar" />
+    </form>
+
+    <button id="btnList">Listar</button>
+    <table border="1">
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Ano Nascimento</th>
+        <th>Idade</th>
+        <th>Nome do Curso</th>
+      </tr>
+      <tbody id="tblStudent"></tbody>
+    </table>
+
+    <script src="../src/student/studentView.ts"></script>
+  </body>
+</html>
